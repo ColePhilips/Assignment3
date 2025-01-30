@@ -1,6 +1,6 @@
 const passport = require("passport"); //Setup for passport to allow for cookies and sessions for the site
 const LocalStrategy = require('passport-local').Strategy;
-const User = require('./models/User');
+const User = require('./User');
 
 //local Strategy for authentication using username and password
 passport.use(new LocalStrategy(
