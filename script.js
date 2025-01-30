@@ -47,3 +47,6 @@ app.get('/profile', (req, res) => {
     if(!req.isAuthenticated()) return res.status(401).send('You are not authenticated');
     res.send(`Hello ${req.use.username}`);
 });
+ app.listen(3000, () => {
+    console.log('Server running on port 3000');
+ });
